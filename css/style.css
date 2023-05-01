@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
+
+* {
+    outline: 1px solid red;
+}
+
+body {
+    font-family: Inter;
+    font-weight: 600;
+    background-color: #E5E5E5;
+}
+
+.logo {
+    margin: 20px 0 0 150px;
+    font-size: 72px;
+    color: #0A3871;
+}
+
+.container-principal {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-principal div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.btn {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 230px;
+    height: 50px;
+    border: 1 solid #0A3871;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* css del form del encriptador*/
+
+.container-form {
+    width: calc(60% - 5px);
+}
+
+#CajaTexto {
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: 0;
+    font-size: 32px;
+    font-weight: 400;
+    width: 100%;
+    height: 480px;
+    resize: none;
+}
+
+#CajaTexto::placeholder {
+    color: #0A3871;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+#CajaTexto:focus {
+    outline: none;
+}
+
+.exclamation {
+    float: left;
+    margin-top: 5px;
+}
+
+.nota {
+    font-size: small;
+    text-align: left;
+    margin: 6px 0 0 20px;
+}
+
+#btn_encriptar {
+    background-color: #0A3871;
+    color: #ffffff;
+}
+
+#btn_desencriptar {
+    margin-left: 15px;
+
+}
+
+
+/* css del resultado del encriptador */
+
+.container-result {
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: calc(40% - 5px);
+}
+
+.container-result img {
+    margin-top: 30%;
+    width: 100%;
+}
+
+.container-result p {
+    text-align: center;
+}
+
+.result {
+    margin: 15px auto;
+    font-size: 24px;
+}
+
+.instruccion {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 10px auto;
+}
+
+#btn_copiar {
+    margin-left: 15%;
+}
+
+
+/*****MEDIA QUERY*****/
+@media screen and (max-device-width : 480px) {
+    .logo {
+        margin: 20px 0 0 5px;
+        font-size: 72px;
+        color: #0A3871;
+    }
+
+    #CajaTexto {
+        background-color: #E5E5E5;
+        color: #0A3871;
+        border: 0;
+        font-size: 22px;
+        font-weight: 400;
+        margin-left: 10px;
+        width: 95%;
+        height: 280px;
+        resize: none;
+    }
+
+    .exclamation {
+        float: left;
+        margin: 5px 0 0 10px;
+    }
+
+    .nota {
+        font-size: small;
+        text-align: left;
+        margin: 6px 0 0 35px;
+    }
+
+    .btn {
+        display: inline;
+        border-radius: 10px;
+        margin: 20px 0 0 5px;
+        width: 330px;
+        height: 50px;
+        border: 1 solid #0A3871;
+    }
+
+    #btn_desencriptar {
+        margin-left: 5px;
+    }
+
+    .container-principal {
+        width: 100%;
+        position: absolute;
+        margin: 0 auto;
+        display: inline-grid;
+        align-content: space-evenly;
+    }
+
+    .container-principal div {
+        display: inline-grid;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .container-result {
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: calc(40% - 5px);
+    }
+
+    .container-result img {
+        visibility: hidden;
+        width: 0%;
+        margin-top: 0;
+    }
+
+    .result {
+        margin: 5px auto;
+        font-size: 24px;
+    }
+
+    #btn_copiar {
+        margin-left: 5px;
+    }
+}
+
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+ 
+}

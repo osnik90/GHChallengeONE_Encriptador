@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"">
     <title>Challenge ONE #1 - Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    
+    <!--Cabecera de Página HMTL-->
+    <header>
+        <p class="logo">a</p>
+    </header>
+    <!--Cuerpo de Página HTML-->
+    <main>
+
+        <div class="container-principal">
+            <div class="container-form">
+                <form action="#">
+                    <!-- <input id="CajaTexto" type="text" name="Codificador" placeholder="Ingrese el texto Aquí"> -->
+                    <textarea name="Codificador" id="CajaTexto" cols="10" rows="20" placeholder="Ingrese el texto Aquí" ></textarea>
+                    <img class="exclamation" src="img/Vector.png" alt="!"> <p class="nota">Soló letras minúsculas y sin puntos de acentuación.</p>
+                    <input class="btn" id="btn_encriptar" type="button" value="Encriptar">
+                    <input class="btn" id="btn_desencriptar" type="button" value="Desencriptar">
+                </form>
+            </div>
+
+            <div class="container-result">
+                <img src="img/Muñeco.png" alt="buscando...">
+                <p class="result">Ningún mensaje fue encontrado</p>
+                <p class="instruccion"> Ingresa el texto que desea encriptar o desencriptar</p>
+                <input class="btn" id="btn_copiar" type="button" value="Copiar">
+            </div>
+        </div>
+
+    </main>
+    <!--Pie de Página HMTL-->
+    <footer></footer>
+
 </body>
+
 </html>
