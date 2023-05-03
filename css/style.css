@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -126,6 +126,22 @@ body {
     visibility: hidden;
 }
 
+footer{
+    margin-top: 10px;
+    background-color: #000000;
+}
+.footer{
+    width: 940px;
+    padding: 30px 20px;
+}
+.redSocial{
+    display: inline;
+}
+
+.redSocial img{
+    width: 3%;
+    filter: invert(100%) sepia(9%) saturate(2687%) hue-rotate(41deg) brightness(126%) contrast(98%);
+}
 
 /*****MEDIA QUERY*****/
 @media screen and (max-device-width : 480px) {
